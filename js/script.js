@@ -31,7 +31,7 @@ btnRequest.addEventListener("click", () => {
                     });
 
                     // STEP 11: Inserisco il template generato nell'elemento ul del DOM
-                    ul.innerHTML = template; // CORRETTO: ul, non ol
+                    ul.innerHTML = template;
                 }
             })
             .catch((error) => {
@@ -39,4 +39,6 @@ btnRequest.addEventListener("click", () => {
                 console.error("Errore nella richiesta:", error);
             });
     }
+    btnRequest.innerHTML = "Rigenera"
 });
+
